@@ -23,7 +23,8 @@ function isPalindrom(word){
     console.log('Your word: ' + word)
     console.log('Reversed: '+ reversedWord);
 
-    if(word == reversedWord){
+    if(word === reversedWord){
+        console.log('Your word is palindrome')
         paliTarget.innerHTML = `<h3 class="text-success">La tua parola è palindorma</h3>`
     } else {
         paliTarget.innerHTML = `<h3 class="text-danger">La tua parola NON è palindorma</h3>`

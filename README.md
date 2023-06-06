@@ -11,3 +11,21 @@
         - La parola dell'utente è palindroma
     - **ALTRIMENTI**:
         - Non palindroma
+
+
+# Pari o dispari
+
+- Chiedo all'utente se pari o dispari e un numero da 1 a 5 e li salvo
+- Creo una funzione che genera un numero randomico da 1 a 5
+- Creo una funzione che stabilisce se il numero è pari:
+        - **SE** la somma dividendola per 2 da resto 0:
+        - Salvo risultato come pari
+    - **ALTRIMENTI**:
+        - Salvo risultato come dispari
+- Sommo il numero dell'utente con quello generato
+- Controllo tramite la funzione se il risultato è pari o dispari
+- Controllo se l'utente ha vinto in base ha cosa ha inserito:
+    - **SE** l'utente ha messo pari **E** il risultato è pari **O** l'utente ha messo dispari **E** il risultato è dispari:
+        -  L'utente ha vinto
+    - **ALTRIMENTI**:
+        -  L'utente ha perso
