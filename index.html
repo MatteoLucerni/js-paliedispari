@@ -9,17 +9,36 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container pt-5">
+        <!-- Verifica parola palindroma -->
         <section id="palindrome">
             <h1>Verifica se la tua parola è palindroma</h1>
-            <input id="user-word" value="ciccio" type="text" placeholder="Inserisci la parola...">
+            <input id="user-word" value="anna" type="text" placeholder="Inserisci la parola...">
             <button id="pali-button" class="btn btn-primary">Verifica!</button>
-            <div id="pali-target" class="mt-3">
-
-            </div>
+            <div id="pali-target" class="mt-3"></div>
         </section>
+        <hr class="my-5">
+        <!-- Pari o dispari -->
         <section id="oddeven">
-            <h1></h1>
+            <h1>Pari o dispari?</h1>
+            <p>Scegli un numero da 1 a 5, sceglierò anche io un numero a caso da 1 a 5.<br>
+                Vediamo se indovini se la somma dei due numeri sarà PARI o DISPARI</p>
+            <div class="select-container d-flex">
+                <h5>Scegli un numero:</h5>
+                <select class="p-2" id="user-number">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <h5>Pari o dispari?</h5>
+                <select id="user-guess">
+                    <option>PARI</option>
+                    <option>DISPARI</option>
+                </select>
+            </div>
+            <button id="oddeven-button" class="btn btn-primary mt-3">Gioca!</button>
         </section>
     </div>
     

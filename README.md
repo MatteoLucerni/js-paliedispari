@@ -18,7 +18,7 @@
 - Chiedo all'utente se pari o dispari e un numero da 1 a 5 e li salvo
 - Creo una funzione che genera un numero randomico da 1 a 5
 - Creo una funzione che stabilisce se il numero è pari:
-        - **SE** la somma dividendola per 2 da resto 0:
+        - **SE** dividendola per 2 da resto 0:
         - Salvo risultato come pari
     - **ALTRIMENTI**:
         - Salvo risultato come dispari
