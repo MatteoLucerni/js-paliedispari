@@ -61,14 +61,19 @@ function isEven(number){
     return isEven;
 }
 
-// sommo i due numeri 
-const sum = parseInt(userNumber.value) + randomNumber(1, 5);
-console.log('sum: ' + sum);
+oddevenButton.addEventListener('click', function(){
+    // sommo i due numeri 
+    const sum = parseInt(userNumber.value) + randomNumber(1, 5);
+    console.log('sum: ' + sum);
 
-if(userGuess.value === 'PARI' && isEven(sum) || userGuess.value === 'DISPARI' && !isEven(sum)){
-    console.log('YOU WON');
-    oddevenTarget.innerHTML = `<h3 class="text-success">Hai vinto! La somma era: ${sum}</h3>`
-} else{
-    console.log('LOSE');
-    oddevenTarget.innerHTML = `<h3 class="text-danger">Hai perso! La somma era: ${sum}</h3>`
-}
+    if(userGuess.value === 'PARI' && isEven(sum) || userGuess.value === 'DISPARI' && !isEven(sum)){
+        console.log('YOU WON');
+        oddevenTarget.innerHTML = `<h3 class="text-success">Hai vinto! La somma era: ${sum}</h3>`
+    } else{
+        console.log('YOU LOSE');
+        oddevenTarget.innerHTML = `<h3 class="text-danger">Hai perso! La somma era: ${sum}</h3>`
+    }
+
+    console.log('---------------');
+});
+
