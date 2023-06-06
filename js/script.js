@@ -8,6 +8,7 @@ const paliTarget = document.getElementById('pali-target');
 const userNumber = document.getElementById('user-number');
 const userGuess = document.getElementById('user-guess');
 const oddevenButton = document.getElementById('oddeven-button');
+const oddevenTarget = document.getElementById('oddeven-taget');
 
 // ! Logica per verifica Palindromia
 
@@ -66,7 +67,8 @@ console.log('sum: ' + sum);
 
 if(userGuess.value === 'PARI' && isEven(sum) || userGuess.value === 'DISPARI' && !isEven(sum)){
     console.log('YOU WON');
-
+    oddevenTarget.innerHTML = `<h3 class="text-success">Hai vinto! La somma era: ${sum}</h3>`
 } else{
     console.log('LOSE');
+    oddevenTarget.innerHTML = `<h3 class="text-danger">Hai perso! La somma era: ${sum}</h3>`
 }
